@@ -23,27 +23,28 @@ GameJam/Temp/
 # =============== #
 # Unity generated #
 # =============== #
-[Tt]emp/
-[Oo]bj/
-[Bb]uild
-/[Ll]ibrary/
-sysinfo.txt
-*.stackdump
+GameJam/[Tt]emp/
+GameJam/[Oo]bj/
+GameJam/[Bb]uild
+GameJam/[Ll]ibrary/
+GameJam/sysinfo.txt
+GameJam/*.stackdump
+GameJam/Library/metadata/
  
 # ============================================= #
 # Visual Studio / MonoDevelop / Rider generated #
 # ============================================= #
 [Ee]xported[Oo]bj/
-.vs/
-/*.userprefs
-/*.csproj
-/*.pidb
-/*.suo
-/*.sln*
-/*.user
-/*.unityproj
-/*.booproj
-/.idea*/
+GameJam/.vs/
+GameJam/*.userprefs
+GameJam/*.csproj
+GameJam/*.pidb
+GameJam/*.suo
+GameJam/*.sln*
+GameJam/*.user
+GameJam/*.unityproj
+GameJam/*.booproj
+GameJam/.idea*/
  
 # ============ #
 # OS generated #
