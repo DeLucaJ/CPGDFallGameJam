@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         inst = this;
+        DontDestroyOnLoad(this);
     }
 
     public bool playerPaused;       //whether the game is paused
