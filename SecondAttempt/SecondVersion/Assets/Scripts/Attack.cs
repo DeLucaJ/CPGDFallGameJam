@@ -3,9 +3,10 @@ using System.Collections;
 
 public class Attack : MonoBehaviour
 {
-    public bool ranged;    //determines if the attack will move from its starting position
-    public int damage;     //the strength of the attack
-    public int duration;   //how long the attack is supposed to exist
+    public bool friendly;   //true if created by a PC Brawler
+    public float speed;     //attack's lateral movement speed, 0 if ranged
+    public int damage;      //the strength of the attack
+    public int duration;    //how long the attack is supposed to exist
     private int elapsed;    //how long the attack has existed
 
 	// Use this for initialization
@@ -17,7 +18,10 @@ public class Attack : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-	    //check collision
+        //existance tick
+        if (++elapsed >= duration)
+            Destroy(gameObject);
+        //check collision
         //move
 	}
 }
