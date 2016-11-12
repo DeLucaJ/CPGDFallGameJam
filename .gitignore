@@ -18,6 +18,7 @@ $RECYCLE.BIN/
 *.lnk
 
 GameJam/
+GameJam/*
 
 #Unity temp files
 GameJam/Temp/
@@ -141,3 +142,4 @@ GameJam/Library/metadata/e2/e2d8106cdd2549345bb913fe1d0e5c3b
 GameJam/Library/metadata/
 GameJam/
 GameJam/*
+*.meta
