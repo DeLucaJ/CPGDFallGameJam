@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class Brawler : MonoBehaviour
+public class Brawler : MonoBehaviour
 {
     protected bool friendly;                //whether the brawler is on the player's side
     public int health;                      //brawler's current health
@@ -63,5 +63,15 @@ public abstract class Brawler : MonoBehaviour
         }
     }
 
-    protected abstract void die();
+    /// <summary>
+    /// An enemy is destroyed, a dying PC means game over.
+    /// </summary>
+    protected void die()
+    {
+        if (!friendly)
+        {
+            Destroy(gameObject);    //enemy dies
+        }
+        //else, game over
+    }
 }
