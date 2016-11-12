@@ -24,7 +24,9 @@ public abstract class Brawler : MonoBehaviour
         //attack
     }
 
-    //either melee or ranged
+    /// <summary>
+    /// Creates an attack in front of the battler.
+    /// </summary>
     public void attack()
     {
 
